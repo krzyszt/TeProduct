@@ -1,0 +1,63 @@
+.te-title-bar {
+  /*background: white;*/
+  background: #9a9a9a;
+  padding: 0 20px;
+  border-bottom: 2px solid black;
+}
+
+.te-logo-area {
+  text-align: center;
+}
+
+.te-title-area {
+  display: inline-block;
+  text-align: center;
+}
+
+.te-title-image {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+  vertical-align: top;
+  border: 1px solid #999;
+}
+
+.te-logo-title {
+  /*color: #111;*/
+  color: white;
+  margin-top: 6px;
+  font-size: 22px;
+}
+
+.te-logo-subtitle {
+  color: white;
+  font-size: 13px;
+  margin-top: -13px;
+}
+
+@media screen and (max-width: 400px) {
+  .te-title-image {
+    display: none;
+  }
+  .te-logo-title {
+    font-size: 18px;
+  }
+}
+
+.te-right-side-controls {
+  line-height: 60px;
+}
+
+.te-right-side-controls > div {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .te-right-side-controls > div {
+    text-align: right;
+  }
+  .te-logo-area {
+    text-align: left;
+  }
+}

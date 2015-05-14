@@ -3,17 +3,39 @@
 <head lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>TeProduct</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="app/app.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="app/ext-modules/teFramework/teFramework.css"/>
 
+
+
+
+
+</head>
+<body class="container-fluid">
+  <te-framework title="TeProduct Application"
+                subtitle="Build with AngularJS and Gridster"
+                image-path="images/logo.jpg">
+  </te-framework>
+
+
+
+
+  <!-- inject-vendor:js -->
   <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="lib/angular/angular.min.js"></script>
+
 
   <!-- Bootstrapping -->
   <script src="app/app.module.js"></script>
 
   <!--External Modules-->
   <script src="app/ext-modules/teFramework/teFramework.module.js"></script>
+  <script src="app/ext-modules/teFramework/teFrameworkDirective.js"></script>
+  <script src="app/ext-modules/teFramework/teFrameworkController.js"></script>
+
   <script src="app/ext-modules/teDashboard/teDashboard.module.js"></script>
   <script src="app/ext-modules/teMenu/teMenu.module.js"></script>
 
@@ -22,9 +44,5 @@
 
 
   <!-- App data services -->
-
-</head>
-<body class="container-fluid">
-  {{ 1+ 3 }}
 </body>
 </html>
