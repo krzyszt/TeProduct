@@ -8,7 +8,7 @@
 
   function teFramework() {
     return {
-      transclude: false,
+      transclude: true,
       scope: {
         title: '@',
         subtitle: '@',

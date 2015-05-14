@@ -1,0 +1,62 @@
+.te-menu-area {
+  position: relative;
+  background-color: #333;
+  color: #ccc;
+  width: 200px;
+  min-height: 100vh;
+  padding-top: 30px;
+  padding-left: 0;
+}
+
+.te-menu {
+  list-style-type: none;
+  vertical-align: top;
+}
+
+.te-menu-area .btn:hover {
+  color: #ccc;
+}
+
+.te-menu-area ul {
+  padding-left: 0;
+}
+
+.te-menu ul {
+  display: inline;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.te-menu li {
+  line-height: 3em;
+  cursor: pointer;
+}
+
+.te-menu li div {
+  display: inline-block;
+  width: 90%;
+  padding-left: 16px;
+}
+
+.te-menu-item:hover {
+  background-color: #555;
+}
+
+.te-menu-icon {
+  margin-right: 10px;
+}
+
+.te-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.te-menu-active-indicator {
+  float: right;
+  color: #ddd;
+  margin-right: 0;
+  margin-top: 8px;
+}

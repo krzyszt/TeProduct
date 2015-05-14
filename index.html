@@ -8,6 +8,7 @@
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="app/app.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="app/ext-modules/teFramework/teFramework.css"/>
+  <link rel="stylesheet" href="app/ext-modules/teMenu/teMenu.css"/>
 
 
 
@@ -18,26 +19,39 @@
   <te-framework title="TeProduct Application"
                 subtitle="Build with AngularJS and Gridster"
                 image-path="images/logo.jpg">
+
+    <te-menu>
+      <te-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></te-menu-item>
+      <te-menu-item label="Products" icon="fa-tags" route="products"></te-menu-item>
+      <te-menu-item label="Contacts" icon="fa-group" route="contacts"></te-menu-item>
+    </te-menu>
   </te-framework>
 
 
 
 
   <!-- inject-vendor:js -->
-  <script src="lib/jquery/dist/jquery.min.js"></script>
-  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="lib/angular/angular.min.js" type="text/javascript"></script>
 
 
   <!-- Bootstrapping -->
-  <script src="app/app.module.js"></script>
+  <script src="app/app.module.js" type="text/javascript"></script>
 
   <!--External Modules-->
-  <script src="app/ext-modules/teFramework/teFramework.module.js"></script>
-  <script src="app/ext-modules/teFramework/teFrameworkDirective.js"></script>
-  <script src="app/ext-modules/teFramework/teFrameworkController.js"></script>
+  <script src="app/ext-modules/teMenu/teMenu.module.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teMenu/teMenuDirective.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teMenu/teMenuItemDirective.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teMenu/teMenuController.js" type="text/javascript"></script>
 
-  <script src="app/ext-modules/teDashboard/teDashboard.module.js"></script>
-  <script src="app/ext-modules/teMenu/teMenu.module.js"></script>
+  <script src="app/ext-modules/teDashboard/teDashboard.module.js" type="text/javascript"></script>
+
+  <script src="app/ext-modules/teFramework/teFramework.module.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teFramework/teFrameworkDirective.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teFramework/teFrameworkController.js" type="text/javascript"></script>
+
+
+
 
   <!--Core-->
   <script src="app/core/core.module.js"></script>
