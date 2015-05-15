@@ -4,10 +4,14 @@
   "use strict";
 
   angular.module('teFramework')
-    .controller('TeFramework', TeFramework);
+    .controller('TeFramework', ['$scope',TeFramework]);
 
-  function TeFramework() {
+  function TeFramework($scope) {
     var vm = this;
+
+    $scope.$on('te-menu-item-selected-event', function(evt, data){
+      vm.routeString = data.route;
+    })
 
   }
 })();
