@@ -1,7 +1,7 @@
-<li class="te-menu-item">
+<li class="te-menu-item" ng-class="{'te-menu-item-horizontal': !isVertical()}">
   <div class="te-noselect">
     <i class="fa {{icon}} te-menu-icon"></i>
     {{ label }}
   </div>
-  <i class="fa fa-2x fa-caret-left te-menu-active-indicator" ng-if="isActive()"></i>
+  <i ng-if="isActive() && isVertical()" class="fa fa-2x fa-caret-left te-menu-active-indicator"></i>
 </li>

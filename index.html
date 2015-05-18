@@ -24,14 +24,13 @@
       <te-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></te-menu-item>
       <te-menu-item label="Contacts" icon="fa-group" route="contacts"></te-menu-item>
       <te-menu-item label="Products" icon="fa-tags" route="products"></te-menu-item>
-      <te-menu-item label="Sales" icon="fa-tags" route="sales"></te-menu-item>
-      <te-menu-item label="Purchase" icon="fa-tags" route="purchase"></te-menu-item>
+      <te-menu-group label="Sales" icon="fa-tags" route="sales">
+        <te-menu-item label="Quotes" icon="fa-tags" route="quotes-sales"></te-menu-item>
+        <te-menu-item label="Orders" icon="fa-tags" route="orders-sales"></te-menu-item>
+        <te-menu-item label="Invoices" icon="fa-tags" route="invoices-sales"></te-menu-item>
+      </te-menu-group>
       <te-menu-item label="Projects" icon="fa-tags" route="projects"></te-menu-item>
       <te-menu-item label="Financials" icon="fa-tags" route="financials"></te-menu-item>
-      <te-menu-item label="Farm" icon="fa-tags" route="farm"></te-menu-item>
-      <te-menu-item label="Activity" icon="fa-tags" route="activity"></te-menu-item>
-      <te-menu-item label="Crops" icon="fa-tags" route="crops"></te-menu-item>
-      <te-menu-item label="Machinery" icon="fa-tags" route="machinery"></te-menu-item>
     </te-menu>
   </te-framework>
 
@@ -50,6 +49,7 @@
   <script src="app/ext-modules/teMenu/teMenu.module.js" type="text/javascript"></script>
   <script src="app/ext-modules/teMenu/teMenuDirective.js" type="text/javascript"></script>
   <script src="app/ext-modules/teMenu/teMenuItemDirective.js" type="text/javascript"></script>
+  <script src="app/ext-modules/teMenu/teMenuGroupDirective.js" type="text/javascript"></script>
   <script src="app/ext-modules/teMenu/teMenuController.js" type="text/javascript"></script>
 
   <script src="app/ext-modules/teDashboard/teDashboard.module.js" type="text/javascript"></script>

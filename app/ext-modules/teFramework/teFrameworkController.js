@@ -11,11 +11,16 @@
 
     vm.isMenuButtonVisible = false;
     vm.isMenuVisible = true;
+    vm.isMenuVerticle = true;
 
     $scope.$on('te-menu-item-selected-event', function(evt, data){
       vm.routeString = data.route;
       checkWidth();
       broadcastMenuState();
+    });
+
+    $scope.$on('te-menu-orientation-changed-event', function(evt, data){
+      vm.isMenuVerticle = data.isMenuVerticle;
     });
 
     $($window).on('resize.teFramework', function(){
@@ -37,20 +42,20 @@
 
     $timeout(function () {
       checkWidth();
+      broadcastMenuState();
     }, 0);
-
-    var broadcastMenuState = function () {
-      $rootScope.$broadcast('te-menu-show',{
-        show: vm.isMenuVisible
-      })
-    };
 
     vm.menuButtonClicked = function(){
       vm.isMenuVisible = !vm.isMenuVisible;
       broadcastMenuState();
     }
 
-
-
+    var broadcastMenuState = function () {
+      $rootScope.$broadcast('te-menu-show',{
+        show: vm.isMenuVisible,
+        isVertical: vm.isMenuVerticle,
+        allowHorizontalToggle: !vm.isMenuButtonVisible
+      })
+    };
   }
 })();

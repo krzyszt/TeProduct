@@ -19,6 +19,10 @@
           return el === ctrl.activeElement;
         };
 
+        scope.isVertical = function(){
+          return ctrl.isVertical || el.parents('.te-submenu-section').length > 0;
+        };
+
         el.on('click', function (evt) {
           evt.stopPropagation();
           evt.preventDefault();

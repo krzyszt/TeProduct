@@ -1,0 +1,10 @@
+<li class="te-menu-item" ng-click="clicked()" ng-class="{'te-menu-item-horizontal': !isVertical()}">
+  <div class="te-noselect">
+    <i class="fa {{icon}} te-menu-icon"></i>
+    {{ label }}
+    <i ng-if="isVertical()" class="fa fa-chevron-left te-group-indicator-left" ng-class="{'fa-rotate-270': isOpen}"></i>
+  </div>
+</li>
+<div ng-show="isOpen" class="te-submenu-section" ng-class="{'te-menu-popup': !isVertical()}">
+  <ul ng-transclude=""></ul>
+</div>
