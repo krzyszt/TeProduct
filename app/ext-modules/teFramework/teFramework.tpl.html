@@ -7,6 +7,13 @@
         <p class="te-logo-subtitle">{{ subtitle }}</p>
       </div>
 
+      <div ng-if="vm.isMenuButtonVisible" ng-click="vm.menuButtonClicked()"
+           class="te-collapsed-menu pull-right">
+        <button type="button" class="btn te-nav-button">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
     </div>
     <div class="te-right-side-controls col-sm-6">
       <div>

@@ -14,6 +14,11 @@
       },
       templateUrl: 'app/ext-modules/teMenu/teMenuItem.tpl.html',
       link: function (scope, el, attr, ctrl) {
+
+        scope.isActive = function(){
+          return el === ctrl.activeElement;
+        };
+
         el.on('click', function (evt) {
           evt.stopPropagation();
           evt.preventDefault();

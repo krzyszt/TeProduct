@@ -11,6 +11,7 @@
         
       },
       controller: 'TeMenu',
+      controllerAs: 'vm',
       templateUrl: 'app/ext-modules/teMenu/teMenu.tpl.html',
       link: function(scope, el, attr){
 
