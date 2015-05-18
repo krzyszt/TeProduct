@@ -3,7 +3,7 @@
     /*
      * Angular modules
      */
-
+    'ngAnimate',
 
     /*
      * 3rd Party modules

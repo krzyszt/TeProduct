@@ -5,6 +5,6 @@
     <i ng-if="isVertical()" class="fa fa-chevron-left te-group-indicator-left" ng-class="{'fa-rotate-270': isOpen}"></i>
   </div>
 </li>
-<div ng-show="isOpen" class="te-submenu-section" ng-class="{'te-menu-popup': !isVertical()}">
+<div ng-show="isOpen" class="te-submenu-section te-fade-in-animation" ng-class="{'te-menu-popup': !isVertical()}">
   <ul ng-transclude=""></ul>
 </div>
