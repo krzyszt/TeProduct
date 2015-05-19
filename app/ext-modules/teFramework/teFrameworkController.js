@@ -4,9 +4,9 @@
   "use strict";
 
   angular.module('teFramework')
-    .controller('TeFramework', ['$scope','$window','$timeout','$rootScope',TeFramework]);
+    .controller('TeFramework', ['$scope','$window','$timeout','$rootScope','$location',TeFramework]);
 
-  function TeFramework($scope, $window, $timeout, $rootScope) {
+  function TeFramework($scope, $window, $timeout, $rootScope, $location) {
     var vm = this;
 
     vm.isMenuButtonVisible = false;
@@ -15,6 +15,7 @@
 
     $scope.$on('te-menu-item-selected-event', function(evt, data){
       vm.routeString = data.route;
+      $location.path(data.route);
       checkWidth();
       broadcastMenuState();
     });

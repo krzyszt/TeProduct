@@ -4,6 +4,7 @@
      * Angular modules
      */
     'ngAnimate',
+    'ngRoute',
 
     /*
      * 3rd Party modules

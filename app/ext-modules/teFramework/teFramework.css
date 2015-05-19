@@ -40,6 +40,7 @@
   .te-title-image {
     display: none;
   }
+
   .te-logo-title {
     font-size: 18px;
   }
@@ -57,6 +58,7 @@
   .te-right-side-controls > div {
     text-align: right;
   }
+
   .te-logo-area {
     text-align: left;
   }
@@ -75,4 +77,16 @@
   padding: 0;
   font-size: 26px;
   color: #777;
+}
+
+.te-main-view {
+  margin-left: 200px;
+  padding: 20px;
+  background-color: #ccc;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.te-main-view-full-width {
+  margin-left: 0;
 }
