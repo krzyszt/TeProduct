@@ -6,10 +6,11 @@
     'ngAnimate',
     'ngRoute',
 
+
     /*
      * 3rd Party modules
      */
-
+    'gridster',
 
     /*
      * External Modules including TeFramework, TeDashboard &TeMenu
