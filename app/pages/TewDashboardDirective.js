@@ -8,7 +8,7 @@
       scope: {
       },
       template: '<te-dashboard></te-dashboard>',
-      link: function(scope, el, attr) {
+      link: function(scope, el, attrs) {
 
         scope.title = 'Te Product Dashboard';
 
@@ -27,14 +27,11 @@
             sizeX: 3,
             sizeY: 3,
             row: 0,
-            col:0
-          },
-          {
-            title: 'Second Widget',
-            sizeX: 3,
-            sizeY: 5,
-            row: 0,
-            col: 5
+            col:0,
+            template: '<cc-temperature></cc-temperature>',
+            widgetSettings: {
+              id: 1000
+            }
           }
         ]
       }

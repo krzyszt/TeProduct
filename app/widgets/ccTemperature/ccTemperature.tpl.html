@@ -1,0 +1,19 @@
+<div class="cc-temperature-widget">
+
+  <div class="cc-temperature-header">
+    <img class="cc-temperature-icon" ng-src="images/therm-icon.png" alt="thermometer" />
+    <span class="cc-temperature-title">Temp</span>
+
+  </div>
+
+  <div class="cc-temperature-body" style="background-image: url(images/{{selectedLocation.image}});">
+    <div class="cc-temperature-view">
+      <div class="cc-temperature-river-name">
+        {{ selectedLocation.name }}
+      </div>
+      <div class="cc-temperature-degrees">
+        {{ selectedLocation.temperature }}º
+      </div>
+    </div>
+  </div>
+</div>
