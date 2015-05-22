@@ -31,7 +31,9 @@
               minSizeY:2,
               template: '<cc-temperature></cc-temperature>',
               widgetSettings: {
-                id: 1000
+                id: 1000,
+                templateUrl: 'app/dialogs/ccSelectLocation.tpl.html',
+                controller: 'SelectLocation'
               }
             }
           },
@@ -44,7 +46,9 @@
               minSizeY:2,
               template: '<cc-inventory></cc-inventory>',
               widgetSettings: {
-                id: 1000
+                id: 1000,
+                templateUrl: 'app/dialogs/ccSelectLocation.tpl.html',
+                controller: 'SelectLocation'
               }
             }
           },
@@ -57,7 +61,9 @@
               minSizeY:2,
               template: '<cc-employee></cc-employee>',
               widgetSettings: {
-                employeeId: 5001
+                employeeId: 5001,
+                templateUrl: 'app/dialogs/ccSelectEmployee.tpl.html',
+                controller: 'SelectEmployee'
               }
             }
           }

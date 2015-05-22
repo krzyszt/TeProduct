@@ -7,6 +7,7 @@
         return {
             templateUrl: 'app/widgets/ccEmployee/ccEmployee.tpl.html',
             link: function(scope,el,attr){
+              scope.selectedEmployee = null;
               dataService.getEmployee(scope.item.widgetSettings.employeeId)
                 .then(function(data){
                   scope.selectedEmployee = data;

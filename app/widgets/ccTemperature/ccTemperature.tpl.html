@@ -6,7 +6,8 @@
 
   </div>
 
-  <div class="cc-temperature-body" style="background-image: url(images/{{selectedLocation.image}});">
+  <div class="cc-temperature-body" ng-style="selectedLocation !== null &&
+                {'background-image': 'url(images/'+ selectedLocation.image +')'}">
     <div class="cc-temperature-view">
       <div class="cc-temperature-river-name">
         {{ selectedLocation.name }}

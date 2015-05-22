@@ -5,7 +5,8 @@
     <span class="cc-inventory-title">Inventory</span>
   </div>
 
-  <div class="cc-inventory-body" style="background-image: url(images/{{selectedLocation.image}});">
+  <div class="cc-inventory-body" ng-style="selectedLocation !== null &&
+                            {'background-image': 'url(images/'+ selectedLocation.image +')'}">
     <div class="cc-inventory-area">
 
       <div class="cc-inventory-river-name">
