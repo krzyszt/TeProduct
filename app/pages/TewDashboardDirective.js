@@ -21,42 +21,49 @@
           swapping: false
         };
 
-        scope.widgets = [
+        scope.widgetDefinitions = [
           {
-            title: 'First Widget',
-            sizeX: 3,
-            sizeY: 3,
-            row: 0,
-            col:0,
-            template: '<cc-temperature></cc-temperature>',
-            widgetSettings: {
-              id: 1000
+            title: 'Temperature',
+            settings: {
+              sizeX: 3,
+              sizeY: 3,
+              minSizeX: 2,
+              minSizeY:2,
+              template: '<cc-temperature></cc-temperature>',
+              widgetSettings: {
+                id: 1000
+              }
             }
           },
           {
-            title: 'Second Widget',
-            sizeX: 5,
-            sizeY: 1,
-            row: 0,
-            col:3,
-            template: '<cc-inventory></cc-inventory>',
-            widgetSettings: {
-              id: 1000
+            title: 'Inventory',
+            settings: {
+              sizeX: 5,
+              sizeY: 1,
+              minSizeX: 2,
+              minSizeY:2,
+              template: '<cc-inventory></cc-inventory>',
+              widgetSettings: {
+                id: 1000
+              }
             }
           },
           {
-            title: 'Third Widget',
-            sizeX: 4,
-            sizeY: 1,
-            row: 0,
-            col:8,
-            template: '<cc-employee></cc-employee>',
-            widgetSettings: {
-              employeeId: 5001
+            title: 'Employee',
+            settings: {
+              sizeX: 4,
+              sizeY: 1,
+              minSizeX: 2,
+              minSizeY:2,
+              template: '<cc-employee></cc-employee>',
+              widgetSettings: {
+                employeeId: 5001
+              }
             }
           }
+        ];
 
-        ]
+        scope.widgets = []
       }
     }
   }

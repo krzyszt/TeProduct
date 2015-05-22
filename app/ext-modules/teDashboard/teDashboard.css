@@ -44,3 +44,28 @@ te-dashboard {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
+.te-dashboard-controls {
+  float: right;
+}
+
+.te-widget-menu-area {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-size: 22px;
+}
+
+.te-widget-menu-area .dropdown-menu {
+  left: -20px;
+  padding-left: 15px;
+  min-width: 55px;
+}
+
+.te-widget-menu-area a {
+  color: white;
+}
+
+.te-widget-menu-area i {
+  cursor: pointer;
+}
