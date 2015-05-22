@@ -1,0 +1,35 @@
+<div class="cc-inventory-widget">
+
+  <div class="cc-inventory-heading">
+    <img class="cc-inventory-icon" ng-src="images/inventory-icon.png" alt="inventory" />
+    <span class="cc-inventory-title">Inventory</span>
+  </div>
+
+  <div class="cc-inventory-body" style="background-image: url(images/{{selectedLocation.image}});">
+    <div class="cc-inventory-area">
+
+      <div class="cc-inventory-river-name">
+        {{ selectedLocation.name }}
+      </div>
+
+      <div class="cc-inventory-item">
+        <img src="images/guide-icon.png"/>
+        <span class="cc-inventory-amount">{{selectedLocation.guides}}</span>
+        <span class="cc-inventory-caption">GUIDES</span>
+      </div>
+      <div class="cc-inventory-item">
+        <img src="images/vest-icon.png"/>
+        <span class="cc-inventory-amount">{{selectedLocation.vests}}</span>
+        <span class="cc-inventory-caption">VESTS</span>
+      </div>
+      <div class="cc-inventory-item">
+        <img src="images/raft-icon.png"/>
+        <span class="cc-inventory-amount">{{selectedLocation.rafts}}</span>
+        <span class="cc-inventory-caption">RAFTS</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

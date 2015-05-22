@@ -32,6 +32,17 @@
             widgetSettings: {
               id: 1000
             }
+          },
+          {
+            title: 'Second Widget',
+            sizeX: 7,
+            sizeY: 2,
+            row: 0,
+            col:5,
+            template: '<cc-inventory></cc-inventory>',
+            widgetSettings: {
+              id: 1000
+            }
           }
         ]
       }
