@@ -11,6 +11,7 @@
      * 3rd Party modules
      */
     'gridster',
+    'ui.bootstrap',
 
     /*
      * External Modules including TeFramework, TeDashboard &TeMenu
