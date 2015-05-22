@@ -1,0 +1,19 @@
+<div class="cc-employee-widget">
+  <div class="cc-employee-heading">
+    <img class="cc-employee-icon" ng-src="images/employee.png" alt="employee" />
+    <span class="cc-employee-title">Employee</span>
+  </div>
+  <div class="cc-employee-body">
+    <div class="cc-employee-row">
+      <div class="cc-employee-name-area">
+        <h4>EMPLOYEE NAME</h4>
+        <p>{{selectedEmployee.name}}</p>
+        <h4>LOCAL RIVER</h4>
+        <p>{{selectedEmployee.location}}</p>
+      </div>
+      <div class="cc-employee-picture-area" style="background-image: url(images/{{selectedEmployee.image}});">
+      </div>
+    </div>
+  </div>
+
+</div>

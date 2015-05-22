@@ -13,7 +13,7 @@
         guides: 20,
         rafts: 18,
         vests: 200,
-        image: 'river1.png'
+        image: 'river-te-1.jpg'
       },
       {
         id: 1001,
@@ -125,8 +125,8 @@
           if (locations[i].id == id) {
             return locations[i];
           }
-          return undefined;
         }
+        return undefined;
       },300);
     }
 
@@ -140,10 +140,10 @@
       return $timeout(function () {
         for (var i = 0; i < employees.length; i++) {
           if (employees[i].id == id) {
-            return employees[id];
+            return employees[i];
           }
-          return undefined;
         }
+        return undefined;
       }, 300);
     }
 

@@ -35,15 +35,27 @@
           },
           {
             title: 'Second Widget',
-            sizeX: 7,
-            sizeY: 2,
+            sizeX: 5,
+            sizeY: 1,
             row: 0,
-            col:5,
+            col:3,
             template: '<cc-inventory></cc-inventory>',
             widgetSettings: {
               id: 1000
             }
+          },
+          {
+            title: 'Third Widget',
+            sizeX: 4,
+            sizeY: 1,
+            row: 0,
+            col:8,
+            template: '<cc-employee></cc-employee>',
+            widgetSettings: {
+              employeeId: 5001
+            }
           }
+
         ]
       }
     }
