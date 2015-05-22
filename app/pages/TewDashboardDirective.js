@@ -61,7 +61,7 @@
               minSizeY:2,
               template: '<cc-employee></cc-employee>',
               widgetSettings: {
-                employeeId: 5001,
+                id: 5001,
                 templateUrl: 'app/dialogs/ccSelectEmployee.tpl.html',
                 controller: 'SelectEmployee'
               }
