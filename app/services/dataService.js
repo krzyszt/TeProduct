@@ -127,7 +127,7 @@
           }
         }
         return undefined;
-      },300);
+      },1000);
     }
 
     var getEmployees = function () {

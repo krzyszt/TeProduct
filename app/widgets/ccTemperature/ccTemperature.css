@@ -1,7 +1,7 @@
 .cc-temperature-widget {
   height: 100%;
   width: 100%;
-  min-height: 180px;
+  /*min-height: 180px;*/
   font-size: 16px;
   color: black;
 }
@@ -30,6 +30,12 @@
   height: 100%;
   overflow: hidden;
   min-height: 180px;
+}
+
+.cc-temperature-body .fa-spin {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .cc-temperature-view {
