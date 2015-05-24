@@ -8,7 +8,7 @@
 
   <div class="cc-temperature-body" ng-style="selectedLocation !== null &&
                 {'background-image': 'url(images/'+ selectedLocation.image +')'}">
-    <div ng-show="!isLoaded">
+    <div ng-show="!isLoaded && !hasError">
       <i class="fa fa-refresh fa-2x fa-spin"></i>
     </div>
     <div  ng-show="isLoaded" class="cc-temperature-view">
@@ -18,6 +18,10 @@
       <div class="cc-temperature-degrees">
         {{ selectedLocation.temperature }}º
       </div>
+    </div>
+    <div ng-if="hasError">
+      <h4>Error Loading Widget</h4>
+      <button class="btn btn-primary" ng-click="loadLocation()">Reload</button>
     </div>
   </div>
 </div>
