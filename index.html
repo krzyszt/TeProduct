@@ -17,24 +17,46 @@
 
 
 </head>
-<body class="container-fluid">
-  <te-framework title="TeProduct Application"
-                subtitle="Build with AngularJS and Gridster"
-                image-path="images/logo.jpg">
+<body class="container-fluid" ng-controller="Main as vm">
 
-    <te-menu>
-      <te-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></te-menu-item>
-      <te-menu-item label="Contacts" icon="fa-group" route="contacts"></te-menu-item>
-      <te-menu-item label="Products" icon="fa-tags" route="products"></te-menu-item>
-      <te-menu-group label="Sales" icon="fa-tags" route="sales">
-        <te-menu-item label="Quotes" icon="fa-tags" route="quotes-sales"></te-menu-item>
-        <te-menu-item label="Orders" icon="fa-tags" route="orders-sales"></te-menu-item>
-        <te-menu-item label="Invoices" icon="fa-tags" route="invoices-sales"></te-menu-item>
-      </te-menu-group>
-      <te-menu-item label="Projects" icon="fa-tags" route="projects"></te-menu-item>
-      <te-menu-item label="Financials" icon="fa-tags" route="financials"></te-menu-item>
-    </te-menu>
-  </te-framework>
+  <div ng-switch="vm.state">
+
+    <div ng-switch-when="unauthorized" class="sign-in-form">
+      <h2>TeProduct Admin App</h2>
+      <h4>Sign In</h4>
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" />
+        </div>
+      </form>
+      <button class="btn btn-primary" ng-click="vm.signIn()">Sign In</button>
+    </div>
+
+    <div ng-switch-default="">
+      <te-framework title="TeProduct Application"
+                    subtitle="Build with AngularJS and Gridster"
+                    image-path="images/logo.jpg">
+
+        <te-menu>
+          <te-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></te-menu-item>
+          <te-menu-item label="Contacts" icon="fa-group" route="contacts"></te-menu-item>
+          <te-menu-item label="Products" icon="fa-tags" route="products"></te-menu-item>
+          <te-menu-group label="Sales" icon="fa-tags" route="sales">
+            <te-menu-item label="Quotes" icon="fa-tags" route="quotes-sales"></te-menu-item>
+            <te-menu-item label="Orders" icon="fa-tags" route="orders-sales"></te-menu-item>
+            <te-menu-item label="Invoices" icon="fa-tags" route="invoices-sales"></te-menu-item>
+          </te-menu-group>
+          <te-menu-item label="Projects" icon="fa-tags" route="projects"></te-menu-item>
+          <te-menu-item label="Financials" icon="fa-tags" route="financials"></te-menu-item>
+        </te-menu>
+      </te-framework>
+    </div>
+  </div>
 
 
   <!-- inject-vendor:js -->
@@ -49,6 +71,7 @@
 
   <!-- Bootstrapping -->
   <script src="app/app.module.js" type="text/javascript"></script>
+  <script src="app/Main.js" type="text/javascript"></script>
 
   <!--Core-->
   <script src="app/core/core.module.js" type="text/javascript"></script>
