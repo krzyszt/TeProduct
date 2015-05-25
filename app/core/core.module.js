@@ -5,6 +5,7 @@
      */
     'ngAnimate',
     'ngRoute',
+    'ngStorage',
 
 
     /*

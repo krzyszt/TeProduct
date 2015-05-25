@@ -1,9 +1,9 @@
 (function(){
   "use strict";
 
-  angular.module('app.core').directive('tewDashboard', TewDashboard);
+  angular.module('app.core').directive('tewDashboard', ['$localStorage',TewDashboard]);
 
-  function TewDashboard() {
+  function TewDashboard($localStorage) {
     return {
       scope: {
       },
@@ -69,7 +69,11 @@
           }
         ];
 
-        scope.widgets = []
+        scope.widgets = $localStorage.widgets || [];
+
+        scope.$watch('widgets', function(){
+            $localStorage.widgets = scope.widgets;
+        }, true);
       }
     }
   }
