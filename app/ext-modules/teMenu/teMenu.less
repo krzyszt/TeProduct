@@ -10,12 +10,13 @@
 @main-menu-color: #333;
 
 //============ Mixins ===========================
-.fade-in-transition() {
-  -moz-transition: linear all 0.5s;
-  -o-transition: linear all 0.5s;
-  -webkit-transition: linear all 0.5s;
-  transition: linear all 0.5s;
+.fade-in-transition(@val: 0.5s) {
+  -moz-transition: linear all @val;
+  -o-transition: linear all @val;
+  -webkit-transition: linear all @val;
+  transition: linear all @val;
 }
+
 .no-select() {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -30,6 +31,12 @@
   background-color: @main-menu-color;
   color: lighten(@main-menu-color, 60%);
   width: 200px;
+  ul {
+    padding-left: 0;
+  }
+  .btn:hover {
+    color: lighten(@main-menu-color, 60%);
+  }
 }
 
 .te-menu-area-vertical {
@@ -47,31 +54,20 @@
 .te-menu {
   list-style-type: none;
   vertical-align: top;
-}
-
-.te-menu-area .btn:hover {
-  color: lighten(@main-menu-color, 60%);
-}
-
-.te-menu-area ul {
-  padding-left: 0;
-}
-
-.te-menu ul {
-  display: inline;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.te-menu li {
-  line-height: 3em;
-  cursor: pointer;
-}
-
-.te-menu li div {
-  display: inline-block;
-  width: 90%;
-  padding-left: 16px;
+  ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    line-height: 3em;
+    cursor: pointer;
+    div {
+      display: inline-block;
+      width: 90%;
+      padding-left: 16px;
+    }
+  }
 }
 
 .te-menu-item:hover {
@@ -83,7 +79,6 @@
   width: 165px;
   margin-left: 20px;
   line-height: 1.5em;
-
 }
 
 .te-menu-icon {
@@ -135,7 +130,7 @@
 }
 
 .te-fade-in-animation {
-  .fade-in-transition();
+  .fade-in-transition;
 }
 
 .te-fade-in-animation.ng-hide {

@@ -12,6 +12,12 @@
   color: #cccccc;
   width: 200px;
 }
+.te-menu-area ul {
+  padding-left: 0;
+}
+.te-menu-area .btn:hover {
+  color: #cccccc;
+}
 .te-menu-area-vertical {
   float: left;
   min-height: 100vh;
@@ -25,12 +31,6 @@
 .te-menu {
   list-style-type: none;
   vertical-align: top;
-}
-.te-menu-area .btn:hover {
-  color: #cccccc;
-}
-.te-menu-area ul {
-  padding-left: 0;
 }
 .te-menu ul {
   display: inline;
