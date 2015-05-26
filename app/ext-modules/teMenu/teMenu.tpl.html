@@ -1,12 +1,11 @@
-<div class="te-menu-area" ng-class="{'te-menu-area-vertical': vm.isVertical, 'te-menu-area-horizontal': !vm.isVertical}"
-  ng-show="vm.showMenu">
-<ul class="te-menu" ng-transclude=""></ul>
-<a class="btn te-menu-layout-button"
-   ng-class="{'te-menu-button-horizontal': !vm.isVertical}"
-   ng-click="vm.toggleMenuOrientation()"
-   ng-show="vm.allowHorizontalToggle">
+<div>
+  <ul class="te-menu" ng-transclude=""></ul>
+  <a class="btn te-menu-layout-button"
+     ng-class="{'te-menu-button-horizontal': !vm.isVertical}"
+     ng-click="vm.toggleMenuOrientation()"
+     ng-show="vm.allowHorizontalToggle">
 
-  <i class="fa"
-    ng-class="{'fa-chevron-up': vm.isVertical, 'fa-chevron-left': !vm.isVertical}"></i>
-</a>
+    <i class="fa"
+       ng-class="{'fa-chevron-up': vm.isVertical, 'fa-chevron-left': !vm.isVertical}"></i>
+  </a>
 </div>
