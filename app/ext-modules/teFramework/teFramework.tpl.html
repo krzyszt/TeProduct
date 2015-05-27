@@ -23,14 +23,14 @@
   </div>
 </div>
 
-<!--<div class="te-menu-area"-->
-     <!--ng-show="vm.showMenu"-->
-     <!--ng-class="{'te-menu-area-vertical': vm.isVertical, 'te-menu-area-horizontal': !vm.isVertical}">-->
-  <!--<te-user-profile></te-user-profile>-->
-  <!--<div ng-transclude=""></div>-->
-<!--</div>-->
+<div class="te-menu-area"
+     ng-show="vm.isMenuVisible"
+     ng-class="{'te-menu-area-vertical': vm.isMenuVertical, 'te-menu-area-horizontal': !vm.isMenuVertical}">
+  <te-user-profile></te-user-profile>
+  <div ng-transclude=""></div>
+</div>
 
 
-<div ng-view="" class="te-main-view" ng-class="{'te-main-view-full-width': !vm.isMenuVerticle || !vm.isMenuVisible}">
+<div ng-view="" class="te-main-view" ng-class="{'te-main-view-full-width': !vm.isMenuVertical || !vm.isMenuVisible}">
 
 </div>

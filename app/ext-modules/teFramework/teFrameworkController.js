@@ -11,7 +11,7 @@
 
     vm.isMenuButtonVisible = false;
     vm.isMenuVisible = true;
-    vm.isMenuVerticle = true;
+    vm.isMenuVertical = true;
 
     $scope.$on('te-menu-item-selected-event', function(evt, data){
       vm.routeString = data.route;
@@ -21,7 +21,7 @@
     });
 
     $scope.$on('te-menu-orientation-changed-event', function(evt, data){
-      vm.isMenuVerticle = data.isMenuVerticle;
+      vm.isMenuVertical = data.isVertical;
     });
 
     $($window).on('resize.teFramework', function(){
@@ -54,7 +54,7 @@
     var broadcastMenuState = function () {
       $rootScope.$broadcast('te-menu-show',{
         show: vm.isMenuVisible,
-        isVertical: vm.isMenuVerticle,
+        isVertical: vm.isMenuVertical,
         allowHorizontalToggle: !vm.isMenuButtonVisible
       })
     };
