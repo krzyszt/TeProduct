@@ -5,7 +5,7 @@
 
   function TeDashboard() {
     return {
-      templateUrl: 'app/ext-modules/teDashboard/teDashboard.tpl.html',
+      templateUrl: 'app/te-modules/teDashboard/teDashboard.tpl.html',
       link: function(scope, el, attrs) {
         scope.addNewWidget = function(widget){
           var newWidget = angular.copy(widget.settings);

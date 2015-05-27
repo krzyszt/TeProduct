@@ -11,7 +11,7 @@
         label: '@',
         icon: '@'
       },
-      templateUrl: 'app/ext-modules/teMenu/teMenuGroup.tpl.html',
+      templateUrl: 'app/te-modules/teMenu/teMenuGroup.tpl.html',
       link: function(scope, el, attr, ctrl){
         scope.isOpen = false;
 

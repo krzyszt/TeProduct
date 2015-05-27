@@ -5,7 +5,7 @@
 
     function TeWidget ($compile, $modal) {
         return {
-            templateUrl: 'app/ext-modules/teDashboard/teWidget.tpl.html',
+            templateUrl: 'app/te-modules/teDashboard/teWidget.tpl.html',
             link: function(scope,el,attr){
               var newElement = angular.element(scope.item.template);
               el.append(newElement);

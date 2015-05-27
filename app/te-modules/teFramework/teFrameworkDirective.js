@@ -16,7 +16,7 @@
       },
       controller: 'TeFramework',
       controllerAs: 'vm',
-      templateUrl: 'app/ext-modules/teFramework/teFramework.tpl.html'
+      templateUrl: 'app/te-modules/teFramework/teFramework.tpl.html'
     }
   }
 })();

@@ -12,7 +12,7 @@
         icon: '@',
         route: '@'
       },
-      templateUrl: 'app/ext-modules/teMenu/teMenuItem.tpl.html',
+      templateUrl: 'app/te-modules/teMenu/teMenuItem.tpl.html',
       link: function (scope, el, attr, ctrl) {
 
         scope.isActive = function(){

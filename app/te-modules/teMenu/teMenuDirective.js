@@ -12,7 +12,7 @@
       },
       controller: 'TeMenu',
       controllerAs: 'vm',
-      templateUrl: 'app/ext-modules/teMenu/teMenu.tpl.html',
+      templateUrl: 'app/te-modules/teMenu/teMenu.tpl.html',
       link: function(scope, el, attr){
         var item = el.find('.te-menu-item:first');
         $timeout(function(){

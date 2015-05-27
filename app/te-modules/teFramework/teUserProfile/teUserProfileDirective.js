@@ -5,7 +5,7 @@
 
     function teUserProfile () {
         return {
-            templateUrl: 'app/ext-modules/teFramework/teUserProfile/teUserProfile.tpl.html'
+            templateUrl: 'app/te-modules/teFramework/teUserProfile/teUserProfile.tpl.html'
         }
     }
 })();
