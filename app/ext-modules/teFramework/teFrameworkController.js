@@ -22,6 +22,9 @@
 
     $scope.$on('te-menu-orientation-changed-event', function(evt, data){
       vm.isMenuVertical = data.isVertical;
+      $timeout(function(){
+        $($window).trigger('resize.teFramework');
+      },0)
     });
 
     $($window).on('resize.teFramework', function(){
