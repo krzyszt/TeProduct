@@ -90,3 +90,49 @@
 .te-main-view-full-width {
   margin-left: 0;
 }
+
+.te-user-profile {
+  background-color: #333;
+  color: white;
+  width: 200px;
+  min-height: 120px;
+  padding-top: 10px;
+}
+
+.te-user-profile > div {
+  display: inline-block;
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+.te-user-profile > div > p {
+  margin-bottom: 2px;
+}
+
+.te-user-profile > div > button {
+  margin-top: 8px;
+}
+
+.te-user-profile img {
+  float: left;
+  margin: 12px;
+  width: 80px;
+  height: 80px;
+}
+
+.te-user-profile-small {
+  color: #333;
+  padding-top: 4px;
+}
+
+.te-user-profile-small > span {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.te-user-profile-small img {
+  width: 40px;
+  height: 40px;
+}
+
